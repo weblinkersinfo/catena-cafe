@@ -127,11 +127,14 @@ function App() {
   const [notePhone, setNotePhone] = useState("")
   const [noteMsg, setNoteMsg] = useState("")
 
+  // Define API server target
+  const API_BASE_URL = "https://catena-cafe-api.onrender.com";
+
   // Fetch Menu and Reviews from Express backend on mount
   useEffect(() => {
     const fetchBackendData = async () => {
       try {
-        const menuRes = await fetch('/api/menu')
+        const menuRes = await fetch(`${API_BASE_URL}/api/menu`)
         if (menuRes.ok) {
           const menuData = await menuRes.json()
           if (Array.isArray(menuData) && menuData.length > 0) {
@@ -143,7 +146,7 @@ function App() {
       }
 
       try {
-        const reviewsRes = await fetch('/api/reviews')
+        const reviewsRes = await fetch(`${API_BASE_URL}/api/reviews`)
         if (reviewsRes.ok) {
           const reviewsData = await reviewsRes.json()
           if (Array.isArray(reviewsData) && reviewsData.length > 0) {
@@ -160,7 +163,7 @@ function App() {
   // Reservation request handler
   const handleReserve = async () => {
     try {
-      const response = await fetch('/api/reservations', {
+      const response = await fetch(`${API_BASE_URL}/api/reservations`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ date: resDate, timeSlot: resTime, seatingArea: resArea })
@@ -185,7 +188,7 @@ function App() {
       return
     }
     try {
-      const response = await fetch('/api/messages', {
+      const response = await fetch(`${API_BASE_URL}/api/messages`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: noteName, phone: notePhone, message: noteMsg })
