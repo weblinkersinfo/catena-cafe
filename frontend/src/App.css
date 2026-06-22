@@ -1,0 +1,4 @@
+/* App-specific utility rules (if any) */
+.text-stroke-thin {
+  -webkit-text-stroke: 1px rgba(17, 17, 17, 0.2);
+}

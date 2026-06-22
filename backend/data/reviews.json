@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "text": "Ambience and vibe is best. The outdoor seating is absolutely cozy.",
+    "author": "Shreya Patil",
+    "role": "Google Local Guide",
+    "rating": 5
+  },
+  {
+    "id": "2",
+    "text": "Cozy aesthetic place for coffee lovers. Anglo-Indian espresso style decoction is exceptionally unique!",
+    "author": "Rahul Deshmukh",
+    "role": "Coffee Connoisseur",
+    "rating": 4.5
+  },
+  {
+    "id": "3",
+    "text": "Great night vibe and peaceful seating. Ideal for romantic evening coffee dates in Nagalapark.",
+    "author": "Ananya Kulkarni",
+    "role": "Instagram Creator",
+    "rating": 5
+  }
+]

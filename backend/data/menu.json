@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Brass Filter Coffee",
+    "price": "₹70",
+    "desc": "Traditional brass filter decoction blended with foaming, thick hot milk.",
+    "tag": "Traditional"
+  },
+  {
+    "name": "Anglo-Indian Espresso",
+    "price": "₹90",
+    "desc": "Espresso extraction using pure filter decoction. High pressure, deep body.",
+    "tag": "House Special"
+  },
+  {
+    "name": "Decoction Iced Latte",
+    "price": "₹110",
+    "desc": "Concentrated decoction over texturized chilled milk & premium brown sugar syrup.",
+    "tag": "Chilled"
+  },
+  {
+    "name": "Cardamom Cold Foam",
+    "price": "₹130",
+    "desc": "12-hour cold-brewed chicory coffee topped with velvety cardamom-spiced cream foam.",
+    "tag": "Cold Brew"
+  },
+  {
+    "name": "Wood-Fired Garden Pizza",
+    "price": "₹180",
+    "desc": "Fresh sourdough crust topped with homegrown basil, cherry tomatoes, and local mozzarella.",
+    "tag": "Bites"
+  }
+]
